@@ -12,3 +12,5 @@ Errata in PDF file:
 
 Page 29, CH3: mov dh, 5 should be changed to mov dh, 2
 Page 32, CH4: je done -> je print_string_pm_done
+Page 46, CH5: caller and callee fcns should be switched
+

@@ -5,6 +5,7 @@ mov dx, 0xfcba
 call print_hex
 jmp $
 
+%include "utils/print_string.asm"
 %include "utils/print_hex.asm"
 
 ; Set section correctly

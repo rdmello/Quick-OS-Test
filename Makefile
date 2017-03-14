@@ -2,7 +2,10 @@
 .PHONY: objects
 objects := $(wildcard *.asm)
 
-Binaries: $(objects)
+.PHONY: binouts
+binouts = $(objects:.asm=.bin)
+
+Binaries: $(binouts)
 
 %.bin : %.asm
 	nasm $< -f bin -o $@
